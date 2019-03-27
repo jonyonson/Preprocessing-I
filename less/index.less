@@ -1,4 +1,3 @@
-// Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -24,41 +23,43 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 
 // Fonts
 @RobotoCondensed: 'Roboto-condensed', sans-serif;
 @Lato: 'Lato', sans-serif;
 
 // Colors
-// @lightgray: lightgray;
-// @lightgray: #fafafa;
 @desire: #E63946;
 @glitter: #E8EBF7;
-@lightsteelblue: #acbed8;
 @davysgrey: #525252;
 
 * {
@@ -97,7 +98,6 @@ h1 {
     margin-bottom: 20px;
   }
 }
-
 
 h2 {
   font-family: @RobotoCondensed;
@@ -158,6 +158,7 @@ header {
     margin-bottom: 20px;
     border-radius: 100%;
     border: 2px solid @davysgrey;
+
     @media(max-width: 500px) {
       width: 70%;
       height: auto;
