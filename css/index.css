@@ -129,10 +129,13 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
-  padding: 0 15px;
+  padding: 0 1.5rem;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
@@ -153,25 +156,25 @@ p {
   line-height: 1.4;
 }
 h1 {
-  font-size: 44px;
+  font-size: 4.4rem;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 }
 @media (max-width: 500px) {
   h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
   }
 }
 h2 {
   font-family: 'Roboto-condensed', sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
 }
 @media (max-width: 500px) {
   h2 {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 header {
@@ -184,11 +187,11 @@ header {
   }
 }
 header nav {
-  padding: 20px 0 20px;
+  padding: 2rem 0 2rem;
 }
 @media (max-width: 500px) {
   header nav {
-    padding: 15px 0;
+    padding: 1.5rem 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -196,13 +199,13 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  margin-left: 30px;
+  margin-left: 3rem;
   color: #E63946;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 @media (max-width: 500px) {
   header nav a {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 header nav a:nth-of-type(1) {
@@ -210,17 +213,17 @@ header nav a:nth-of-type(1) {
 }
 .top-content {
   background: #E8EBF7;
-  padding: 40px;
+  padding: 4rem;
   border: 1px dashed #525252;
 }
 @media (max-width: 500px) {
   .top-content {
     text-align: center;
-    padding: 40px 20px;
+    padding: 4rem 2rem;
   }
 }
 .top-content img {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   border-radius: 100%;
   border: 2px solid #525252;
 }
@@ -231,8 +234,8 @@ header nav a:nth-of-type(1) {
   }
 }
 .top-content p {
-  margin: 30px 0;
-  font-size: 20px;
+  margin: 3rem 0;
+  font-size: 2rem;
 }
 @media (max-width: 500px) {
   .top-content p {
@@ -288,18 +291,24 @@ table {
   width: 100%;
   border-collapse: collapse;
   border: 1px dashed #525252;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  table {
+    margin-bottom: 1rem;
+  }
 }
 table th,
 table td {
-  padding: 15px;
+  padding: 1.5rem;
   text-align: center;
+  font-size: 1.6rem;
 }
 @media (max-width: 500px) {
   table th,
   table td {
     padding: 8px;
-    font-size: 15px;
+    font-size: 1.3rem;
   }
 }
 table th {
@@ -310,11 +319,12 @@ table th {
 }
 footer p {
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
+  font-size: 1.6rem;
 }
 @media (max-width: 500px) {
   footer p {
-    font-size: 14px;
-    padding: 12px;
+    font-size: 1.4rem;
+    padding: 1.2rem;
   }
 }

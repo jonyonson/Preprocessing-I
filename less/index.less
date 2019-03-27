@@ -62,13 +62,21 @@ table {
 @glitter: #E8EBF7;
 @davysgrey: #525252;
 
+// Mixins
+
+
+
 * {
     box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 html, body {
   height: 100%;
-  padding: 0 15px;
+  padding: 0 1.5rem;
   font-family: @Lato;
   font-weight: 300;
 }
@@ -89,24 +97,24 @@ p {
 }
 
 h1 {
-  font-size: 44px;
+  font-size: 4.4rem;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 
   @media(max-width: 500px) {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
   }
 }
 
 h2 {
   font-family: @RobotoCondensed;
   font-weight: 400;
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
 
   @media(max-width: 500px) {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 
@@ -120,10 +128,10 @@ header {
   }
 
   nav {
-    padding: 20px 0 20px;
+    padding: 2rem 0 2rem;
 
     @media(max-width: 500px) {
-      padding: 15px 0;
+      padding: 1.5rem 0;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -131,13 +139,14 @@ header {
 
     a {
       text-decoration: none;
-      margin-left: 30px;
+      margin-left: 3rem;
       color: @desire;
-      font-size: 18px;
+      font-size: 1.8rem;
 
       @media(max-width: 500px) {
-        font-size: 14px;
+        font-size: 1.4rem;
       }
+
       &:nth-of-type(1) {
         margin: 0;
       }
@@ -147,16 +156,16 @@ header {
 
 .top-content {
   background: @glitter;
-  padding: 40px;
+  padding: 4rem;
   border: 1px dashed @davysgrey;
 
   @media(max-width: 500px) {
     text-align: center;
-    padding: 40px 20px;
+    padding: 4rem 2rem;
   }
 
   img {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     border-radius: 100%;
     border: 2px solid @davysgrey;
 
@@ -167,8 +176,8 @@ header {
   }
 
   p {
-    margin: 30px 0;
-    font-size: 20px;
+    margin: 3rem 0;
+    font-size: 2rem;
 
     @media(max-width: 500px) {
       font-size: 17px;
@@ -229,15 +238,20 @@ table {
   width: 100%;
   border-collapse: collapse;
   border: 1px dashed @davysgrey;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
+
+  @media(max-width: 500px) {
+    margin-bottom: 1rem;
+  }
 
   th, td {
-    padding: 15px;
+    padding: 1.5rem;
     text-align: center;
+    font-size: 1.6rem;
 
     @media(max-width: 500px) {
       padding: 8px;
-      font-size: 15px;
+      font-size: 1.3rem;
     }
   }
 
@@ -252,12 +266,12 @@ table {
 footer {
   p {
     text-align: center;
-    padding: 20px;
-
+    padding: 2rem;
+    font-size: 1.6rem;
 
     @media(max-width: 500px) {
-      font-size: 14px;
-      padding: 12px;
+      font-size: 1.4rem;
+      padding: 1.2rem;
     }
   }
 }
