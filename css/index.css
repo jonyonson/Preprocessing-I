@@ -136,16 +136,78 @@ body {
   padding: 10px 10px 0;
 }
 .container {
+  width: 100%;
   max-width: 800px;
   margin: auto;
   border: 1px solid black;
   height: 100%;
 }
-nav {
+p {
+  line-height: 1.4;
+}
+header {
   display: flex;
   justify-content: flex-end;
 }
-nav a {
+header nav {
+  border: 1px solid red;
+}
+header nav a {
   text-decoration: none;
   color: gray;
+}
+.top-content {
+  background: lightgray;
+  padding: 3%;
+}
+.top-content img {
+  margin-bottom: 20px;
+}
+.top-content h1 {
+  font-size: 32px;
+}
+.top-content h2 {
+  font-size: 24px;
+}
+.top-content p {
+  margin: 30px 0;
+}
+.middle-content {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+.middle-content div {
+  width: 45%;
+}
+.middle-content div h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.middle-content div ul {
+  border: 1px solid black;
+}
+.middle-content div ul li {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.middle-content div ul li:nth-of-type(5) {
+  border-bottom: 0;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+th,
+td {
+  padding: 15px;
+}
+footer {
+  background: green;
+}
+footer p {
+  text-align: center;
+  padding: 20px;
 }

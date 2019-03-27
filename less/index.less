@@ -59,19 +59,100 @@ html, body {
 }
 
 .container {
+  width: 100%;
   max-width: 800px;
   margin: auto;
   border: 1px solid black;
   height: 100%;
 }
 
-nav {
+p {
+  line-height: 1.4;
+}
+
+header {
   display: flex;
   justify-content: flex-end;
 
-  a {
-    text-decoration: none;
-    color: gray;
+  nav {
+    border: 1px solid red;
+
+    a {
+      text-decoration: none;
+      color: gray;
+    }
   }
 }
 
+.top-content {
+  background:lightgray;
+  padding: 3%;
+
+  img {
+
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    margin: 30px 0;
+  }
+}
+
+.middle-content {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+
+  div {
+    width: 45%;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      border: 1px solid black;
+      li {
+        // border: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 10px;
+
+        &:nth-of-type(5) {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 15px;
+}
+
+
+footer {
+  background: green;
+  p {
+    text-align: center;
+    padding: 20px;
+
+
+  }
+}
