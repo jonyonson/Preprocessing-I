@@ -211,6 +211,7 @@ header nav a:nth-of-type(1) {
 .top-content {
   background: #E8EBF7;
   padding: 40px;
+  border: 1px dashed #525252;
 }
 @media (max-width: 500px) {
   .top-content {
