@@ -1,5 +1,4 @@
-// Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,36 +23,260 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
+// Fonts
+@RobotoCondensed: 'Roboto-condensed', sans-serif;
+@Lato: 'Lato', sans-serif;
+
+// Colors
+@desire: #E63946;
+@glitter: #E8EBF7;
+@davysgrey: #525252;
+
+// Mixins
+.mb3() {
+  margin-bottom: 3rem;
+}
+
+.space-between() {
+  display: flex;
+  justify-content: space-between;
+}
+
 * {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html {
+  font-size: 62.5%;
 }
 
+html, body {
+  height: 100%;
+  padding: 0 1rem;
+  font-family: @Lato;
+  font-weight: 300;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: @RobotoCondensed;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  height: 100%;
+}
+
+p {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 4.4rem;
+  font-weight: bold;
+  .mb3();
+
+  @media(max-width: 500px) {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+h2 {
+  font-family: @RobotoCondensed;
+  font-weight: 400;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+
+  @media(max-width: 500px) {
+    font-size: 1.8rem;
+  }
+}
+
+
+header {
+  display: flex;
+  justify-content: flex-end;
+
+  @media(max-width: 500px) {
+    justify-content: space-between;
+  }
+
+  nav {
+    padding: 2rem 0 2rem;
+
+    @media(max-width: 500px) {
+      padding: 1.5rem 0;
+      width: 100%;
+      .space-between();
+    }
+
+    a {
+      text-decoration: none;
+      margin-left: 3rem;
+      color: @desire;
+      font-size: 1.8rem;
+
+      @media(max-width: 500px) {
+        font-size: 1.4rem;
+      }
+
+      &:nth-of-type(1) {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.top-content {
+  background: @glitter;
+  padding: 4rem;
+  border: 1px dashed @davysgrey;
+
+  @media(max-width: 500px) {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  img {
+    margin-bottom: 2rem;
+    border-radius: 100%;
+    border: 2px solid @davysgrey;
+
+    @media(max-width: 500px) {
+      width: 70%;
+      height: auto;
+    }
+  }
+
+  p {
+    margin: 3rem 0;
+    font-size: 2rem;
+
+    @media(max-width: 500px) {
+      font-size: 17px;
+    }
+  }
+
+  button {
+    font-size: 18px;
+    padding: 8px 22px;
+    border: 1px solid @desire;
+    background: white;
+    font-weight: 200;
+
+    @media(max-width: 500px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.middle-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+
+  @media(max-width: 500px) {
+    display: block;
+    margin: 3rem 0;
+  }
+
+  div {
+    width: 45%;
+    font-size: 18px;
+
+    @media(max-width: 500px) {
+      font-size: 16px;
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+
+    ul {
+      border: 1px dashed @davysgrey;
+
+      li {
+        border-bottom: 1px dashed @davysgrey;
+        padding: 10px;
+
+        &:nth-of-type(5) {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px dashed @davysgrey;
+  margin-bottom: 2rem;
+
+  @media(max-width: 500px) {
+    margin-bottom: 1rem;
+  }
+
+  th, td {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+
+    @media(max-width: 500px) {
+      padding: 8px;
+      font-size: 1.3rem;
+    }
+  }
+
+  th {
+    font-family: @RobotoCondensed;
+    font-weight: 400;
+    background: @glitter;
+    border-bottom: 1px dashed @davysgrey;
+  }
+}
+
+footer {
+  p {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.6rem;
+
+    @media(max-width: 500px) {
+      font-size: 1.4rem;
+      padding: 1.2rem;
+    }
+  }
+}

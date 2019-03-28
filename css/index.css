@@ -1,1 +1,330 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+  padding: 0 1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Roboto-condensed', sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  height: 100%;
+}
+p {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 4.4rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+}
+h2 {
+  font-family: 'Roboto-condensed', sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  header {
+    justify-content: space-between;
+  }
+}
+header nav {
+  padding: 2rem 0 2rem;
+}
+@media (max-width: 500px) {
+  header nav {
+    padding: 1.5rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+header nav a {
+  text-decoration: none;
+  margin-left: 3rem;
+  color: #E63946;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 1.4rem;
+  }
+}
+header nav a:nth-of-type(1) {
+  margin: 0;
+}
+.top-content {
+  background: #E8EBF7;
+  padding: 4rem;
+  border: 1px dashed #525252;
+}
+@media (max-width: 500px) {
+  .top-content {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+}
+.top-content img {
+  margin-bottom: 2rem;
+  border-radius: 100%;
+  border: 2px solid #525252;
+}
+@media (max-width: 500px) {
+  .top-content img {
+    width: 70%;
+    height: auto;
+  }
+}
+.top-content p {
+  margin: 3rem 0;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .top-content p {
+    font-size: 17px;
+  }
+}
+.top-content button {
+  font-size: 18px;
+  padding: 8px 22px;
+  border: 1px solid #E63946;
+  background: white;
+  font-weight: 200;
+}
+@media (max-width: 500px) {
+  .top-content button {
+    font-size: 16px;
+  }
+}
+.middle-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+@media (max-width: 500px) {
+  .middle-content {
+    display: block;
+    margin: 3rem 0;
+  }
+}
+.middle-content div {
+  width: 45%;
+  font-size: 18px;
+}
+@media (max-width: 500px) {
+  .middle-content div {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+.middle-content div ul {
+  border: 1px dashed #525252;
+}
+.middle-content div ul li {
+  border-bottom: 1px dashed #525252;
+  padding: 10px;
+}
+.middle-content div ul li:nth-of-type(5) {
+  border-bottom: 0;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px dashed #525252;
+  margin-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  table {
+    margin-bottom: 1rem;
+  }
+}
+table th,
+table td {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  table th,
+  table td {
+    padding: 8px;
+    font-size: 1.3rem;
+  }
+}
+table th {
+  font-family: 'Roboto-condensed', sans-serif;
+  font-weight: 400;
+  background: #E8EBF7;
+  border-bottom: 1px dashed #525252;
+}
+footer p {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  footer p {
+    font-size: 1.4rem;
+    padding: 1.2rem;
+  }
+}
